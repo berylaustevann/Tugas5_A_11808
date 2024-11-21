@@ -62,5 +62,5 @@ if os.path.exists(model_path):
                 st.image(image, caption=f"Gambar: {uploaded_file.name}", use_column_width=True)
     except Exception as e:
         st.error(f"Error: {str(e)}")
-    else:
-        st.error("File model tidak ditemukan.")
+else:
+    st.error("File model tidak ditemukan.")
